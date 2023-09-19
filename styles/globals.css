@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .divider {
+    @apply border-b-1 border-solid border-gray-200;
+  }
+}
