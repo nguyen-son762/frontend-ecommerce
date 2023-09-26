@@ -5,6 +5,9 @@ import { fontRoboto } from '@/config/fonts'
 import { Providers } from './providers'
 import clsx from 'clsx'
 import 'react-toastify/dist/ReactToastify.css'
+import HeaderTop from '@/components/layouts/main/HeaderTop'
+import Header from '@/components/layouts/main/Header'
+import Navbar from '@/components/layouts/main/NavbarDefault'
 
 export const metadata: Metadata = {
   title: {
@@ -37,9 +40,14 @@ export default function RootLayout({
           fontRoboto.className
         )}
       >
-        <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
+        <Providers themeProps={{ attribute: 'class', defaultTheme: 'light' }}>
           <div className="relative flex flex-col h-screen">
-            <main>{children}</main>
+            <main>
+              <HeaderTop />
+              <Header />
+              <Navbar />
+              {children}
+            </main>
           </div>
         </Providers>
       </body>

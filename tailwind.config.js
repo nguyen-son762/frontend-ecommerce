@@ -1,4 +1,4 @@
-import { nextui } from '@nextui-org/theme'
+import { nextui } from '@nextui-org/react'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -21,7 +21,9 @@ module.exports = {
           },
         },
         dark: {
-          colors: {},
+          colors: {
+            primary: '#3bb77e',
+          },
         },
       },
     }),

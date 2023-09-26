@@ -4,8 +4,7 @@ import HeaderTop from '@/components/layouts/main/HeaderTop'
 export default function Home() {
   return (
     <section>
-      <HeaderTop />
-      <Header />
+
     </section>
   )
 }

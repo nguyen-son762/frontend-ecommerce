@@ -1,3 +1,5 @@
+'use client'
+
 import React, { memo } from 'react'
 import { Link } from '@nextui-org/link'
 import { Divider } from '@nextui-org/divider'
@@ -10,7 +12,7 @@ const HeaderTop = () => {
           <Link
             href="/about"
             color="foreground"
-            className="text-sm text-gray-500"
+            className="text-sm text-gray-500 hover:text-primary dark:text-white dark:hover:text-primary"
           >
             Về chúng tôi
           </Link>
@@ -20,7 +22,7 @@ const HeaderTop = () => {
           <Link
             href="/about"
             color="foreground"
-            className="text-sm text-gray-500"
+            className="text-sm text-gray-500 hover:text-primary dark:text-white dark:hover:text-primary"
           >
             Tài khoản của tôi
           </Link>
@@ -30,7 +32,7 @@ const HeaderTop = () => {
           <Link
             href="/about"
             color="foreground"
-            className="text-sm text-gray-500"
+            className="text-sm text-gray-500 hover:text-primary dark:text-white dark:hover:text-primary"
           >
             Theo dõi đơn hàng
           </Link>
