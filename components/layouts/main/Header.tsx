@@ -2,14 +2,9 @@
 
 import React, { memo } from 'react'
 import NextImage from 'next/image'
-import {
-  Button,
-  Input,
-  Image,
-  Badge,
-  Tooltip,
-} from '@nextui-org/react'
+import { Button, Input, Image, Badge, Tooltip } from '@nextui-org/react'
 import { Heart, ShoppingCart, User } from 'react-feather'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -33,10 +28,8 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <Tooltip
-            content={
-              <p className='py-3'>Không có sản phẩm yêu thích</p>
-            }
-            placement='bottom'
+            content={<p className="py-3">Không có sản phẩm yêu thích</p>}
+            placement="bottom"
           >
             <div>
               <Badge
@@ -46,7 +39,10 @@ const Header = () => {
                 size="lg"
                 placement="top-left"
               >
-                <Button variant="light" startContent={<Heart color='#f54180' />}>
+                <Button
+                  variant="light"
+                  startContent={<Heart color="#f54180" />}
+                >
                   Yêu thích
                 </Button>
               </Badge>
@@ -59,7 +55,7 @@ const Header = () => {
                 Đăng nhập
               </Button>
             }
-            placement='bottom'
+            placement="bottom"
           >
             <div>
               <Badge
@@ -69,7 +65,10 @@ const Header = () => {
                 size="lg"
                 placement="top-left"
               >
-                <Button variant="light" startContent={<ShoppingCart color='#3bb77e' />}>
+                <Button
+                  variant="light"
+                  startContent={<ShoppingCart color="#3bb77e" />}
+                >
                   Giỏ hàng
                 </Button>
               </Badge>
@@ -78,11 +77,11 @@ const Header = () => {
 
           <Tooltip
             content={
-              <Button variant="light" fullWidth>
+              <Button as={Link} href="/login" variant="light" fullWidth>
                 Đăng nhập
               </Button>
             }
-            placement='bottom'
+            placement="bottom"
           >
             <Button variant="light" startContent={<User />}>
               Tài khoản

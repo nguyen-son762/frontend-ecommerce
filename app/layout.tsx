@@ -4,10 +4,10 @@ import { siteConfig } from '@/config/site'
 import { fontRoboto } from '@/config/fonts'
 import { Providers } from './providers'
 import clsx from 'clsx'
-import 'react-toastify/dist/ReactToastify.css'
 import HeaderTop from '@/components/layouts/main/HeaderTop'
 import Header from '@/components/layouts/main/Header'
 import Navbar from '@/components/layouts/main/NavbarDefault'
+import { Toaster } from 'react-hot-toast'
 
 export const metadata: Metadata = {
   title: {
@@ -46,6 +46,7 @@ export default function RootLayout({
               <HeaderTop />
               <Header />
               <Navbar />
+              <Toaster />
               {children}
             </main>
           </div>

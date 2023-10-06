@@ -9,7 +9,7 @@ const Page = () => {
       <div className="divider">
         <div className="container mx-auto">
           <div className="flex items-end text-primary py-5">
-            <Link href='/' className="flex items-center cursor-pointer">
+            <Link href="/" className="flex items-center cursor-pointer">
               <Home size={16} className="mr-1" />
               <span className="mr-2 text-sm mt-1">Trang chủ</span>
               <ChevronRight size={16} className="mr-1" />
